@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-let express = require('express')
-let minimist = require('minimist')
+import express from 'express'
+import minimist from 'minimist'
 
 import {rps, rpsls} from './lib/rpsls.js';
 
@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended: true}));
 app.get('/app/', (req, res) => {
 
     res.status(200).send("200 OK");
-    
+
 });
 
 app.get('/app/rps/', (req, res) => {
